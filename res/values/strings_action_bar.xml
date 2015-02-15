@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="actionbar_option">Options</string>
+    <string name="actionbar_compose">Compose</string>
+    <string name="actionbar_search">Search</string>    
+</resources>

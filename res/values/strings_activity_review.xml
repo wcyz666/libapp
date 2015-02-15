@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="title_activity_review">Review</string>
+    <string name="hint">post your opinions to help others</string>
+    <string name="post_action">post</string>
+    <string name="ranking">rank</string>
+
+</resources>

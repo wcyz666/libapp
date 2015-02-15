@@ -1,0 +1,83 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6.5"
+    android:background="@color/background_white"
+    tools:context=".MainActivity" >
+<!-- Title -->
+
+
+
+<!-- Title -->
+
+
+<!-- scroll view -->    
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.81"
+        android:orientation="vertical" />
+ 
+<!-- scroll view -->
+
+<!-- Bottom buttons -->
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:paddingTop="10dp"
+        android:background="@color/background_white_smoke"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/home_button"
+            android:onClick="imagePressed"
+            android:src="@drawable/ic_home_pressed" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/search_button"
+            android:longClickable="true"
+            android:onClick="imagePressed"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/map_button"
+            android:longClickable="true"
+            android:onClick="imagePressed"
+            android:src="@drawable/ic_map" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/more_button"
+            android:onClick="imagePressed"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+
+</LinearLayout>

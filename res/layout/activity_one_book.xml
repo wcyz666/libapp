@@ -1,0 +1,169 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".OneBookActivity" 
+    android:background="@color/background_white">
+
+   	<TextView
+   	    android:layout_width="match_parent"
+   	    android:layout_height="60dp"
+   	    android:gravity="center"
+   	    android:text="@string/book_details"
+   	    android:textColor="@color/text_black"
+   	    android:textSize="30sp" />
+
+  	<View
+	  	android:layout_width="fill_parent"
+	   	android:layout_height="1dp"
+	   	android:background="@android:color/darker_gray"/>
+
+  	<TextView
+  	    android:id="@+id/book_detail_title"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="50dp"
+  	    android:gravity="center"
+  	    android:maxLines="3"
+  	    android:text="Head First Java"
+  	    android:textColor="@color/text_black"
+  	    android:textSize="20sp" />
+
+	<ImageView
+	    android:id="@+id/book_detail_cover"
+	    android:layout_width="match_parent"
+	    android:layout_height="133dp"
+	    android:src="@drawable/java1" />
+
+   	<View
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="15dp"
+   	    android:layout_weight="0.01" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1.84"
+	    android:orientation="vertical" >
+    	<TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="About this book"
+            android:textSize="13sp"
+            android:textColor="@color/text_black"/>
+    	<View
+	   		android:layout_width="fill_parent"
+	    	android:layout_height="1dp"
+	    	android:background="@android:color/darker_gray"/>  	    	
+	    <TableLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:stretchColumns="1">		        
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="left"
+		            android:padding="3dip"
+		            android:text="Status" />
+		        <TextView
+		            android:id="@+id/book_detail_status"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="3dip"
+		            android:text="NOT checked out" />
+		    </TableRow>
+		
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+		        <TextView
+		            android:gravity="left"
+		            android:padding="3dip"
+		            android:text="Author" />
+		        <TextView
+		            android:id="@+id/book_detail_author"
+		            android:layout_width="wrap_content"
+		            android:layout_column="1"
+		            android:padding="3dip"
+		            android:text="Sierra" />
+		    </TableRow>
+		
+		    <TableRow>
+		        <TextView
+		            android:gravity="left"
+		            android:padding="3dip"
+		            android:text="Edition" />
+		        <TextView
+		            android:id="@+id/book_detail_edition"
+		            android:layout_column="1"
+		            android:text="Java; Internet Programming"
+		            android:padding="3dip" />
+	    	</TableRow>
+	    	
+		    <TableRow>
+		        <TextView
+		            android:gravity="left"
+		            android:padding="3dip"
+		            android:text="Press" />
+		        <TextView
+		            android:id="@+id/book_detail_press"
+		            android:layout_column="1"
+		            android:text="Oracle Sun"
+		            android:maxLines="2"
+		            android:padding="3dip" />
+
+	    	</TableRow>
+	    	
+	    	<TableRow>
+		        <TextView
+		            android:gravity="left"
+		            android:padding="3dip"
+		            android:text="Location" />
+		        <TextView
+		            android:id="@+id/book_detail_location"
+		            android:layout_column="1"
+		            android:text="c2004"
+		            android:padding="3dip" />
+
+	    	</TableRow>
+	    	
+	    </TableLayout>	    
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+
+		<TextView
+		    android:id="@+id/book_introduction"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Introduction" 
+		    android:textColor="@android:color/black"/>
+		
+    	<View
+	   		android:layout_width="fill_parent"
+	    	android:layout_height="1dp"
+	    	android:background="@android:color/darker_gray"/>
+
+    	<TextView
+    	    android:id="@+id/textView1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="75dp"
+    	    android:text="TextView" />
+
+	    <Button
+	        android:id="@+id/see_reviews"
+	      	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="See reviews" />
+	</LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_send">Send</string>
+    <string name="edit_message">Enter a choice</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="action_search">search</string>
+    <string name="action_share">share</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_details">Search</string>
+    <string name="title_activity_book_list">BookCollections</string>
+    <string name="title_activity_bubble_room">BubbleRoomActivity</string>
+    <string name="title_activity_floor_list">FloorList</string>
+    <string name="title_activity_study_room">StudyRoomActivity</string>
+    <string name="facility_list">facility list</string>
+	<string name="ul">University Library</string>
+	<string name="cc">Elisabeth Luce Moore Library</string>
+	<string name="uc">Wu Chung Multimedia Library</string>
+	<string name="na">Ch\'ien Mu Library</string>
+	
+</resources>

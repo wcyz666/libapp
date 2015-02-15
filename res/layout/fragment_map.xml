@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+ 
+   	
+   	<View
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+   	
+   	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+   	
+   	<LinearLayout
+   		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="30dp"
+    	android:orientation="vertical">
+      	    
+        <RelativeLayout
+            android:id="@+id/map_cuhk"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <ImageView
+	            android:id="@+id/record_image"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:src="@drawable/cuhk" />	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:layout_marginLeft="33dp"
+	            android:layout_toRightOf="@+id/record_image"
+	            android:text="@string/ul"
+		        android:textSize="15sp" />
+	    </RelativeLayout>
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray" />
+	    
+	    <RelativeLayout
+	        android:id="@+id/map_cc"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <ImageView
+	            android:id="@+id/reserve_list_image"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:src="@drawable/cc" />	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:layout_marginLeft="33dp"
+	            android:layout_toRightOf="@id/reserve_list_image"
+	            android:text="@string/cc"
+		        android:textSize="15sp" />
+	    </RelativeLayout>
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray" />
+	    <RelativeLayout
+	        android:id="@+id/map_uc"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <ImageView
+	            android:id="@+id/contact_us_image"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:src="@drawable/uc" />	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:layout_marginLeft="33dp"
+	            android:layout_toRightOf="@id/contact_us_image"
+	            android:text="@string/uc"
+		        android:textSize="15sp" />
+	    </RelativeLayout>
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray" />
+	    <RelativeLayout
+	        android:id="@+id/map_na"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <ImageView
+	            android:id="@+id/tips_image"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:src="@drawable/na" />	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:layout_marginLeft="33dp"
+	            android:layout_toRightOf="@id/tips_image"
+	            android:text="@string/na"
+		        android:textSize="15sp" />
+	    </RelativeLayout>
+   	</LinearLayout>
+   	
+   	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+   	    
+</LinearLayout>

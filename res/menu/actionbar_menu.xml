@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:LibApp="http://schemas.android.com/apk/res-auto">
+     <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/actionbar_search"
+          LibApp:showAsAction="ifRoom|collapseActionView"
+          LibApp:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item android:id="@+id/action_option"
+          android:title="@string/actionbar_option" 
+          LibApp:showAsAction="collapseActionView"/>
+    <item android:id="@+id/action_compose"
+          android:icon="@drawable/ic_action_compose"
+          android:title="@string/actionbar_compose" 
+          LibApp:showAsAction="always"/>
+</menu>

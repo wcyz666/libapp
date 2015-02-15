@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fragment_more_titles">
+	    <item>Logout</item>
+	    <item>Record</item>
+	    <item>Beatiful Library</item>
+	</string-array>
+	
+    <array name="fragment_more_icons">
+        <item>@drawable/more_logout</item>
+        <item>@drawable/ic_record</item>
+        <item>@drawable/ic_camera</item>
+    </array>
+</resources>

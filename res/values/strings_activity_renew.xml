@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_all">Select All</string>
+    <string name="record_submit">Renew Books</string>
+    <string name="record_info">Record Information</string>
+</resources>

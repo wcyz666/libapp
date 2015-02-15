@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="title_activity_book_room_list">BookRoomList</string>
+    <string name="book_room_list">Booking Room</string>
+    <string name="add_group_study_room">Add group study room</string>
+    <string name="book_room_dialog_yes">Next</string>
+    <string name="book_room_dialog_no">Cancel</string>
+    <string name="book_room_dialog_done">Book</string>
+    <string name="book_room_date"><b>Set date</b></string>
+    <string name="book_room_start_time"><b>Set starting time</b></string>
+    <string name="book_room_end_time"><b>Set ending time</b></string>
+    <string name="cancel_button_yes">Yes</string>
+    <string name="cancel_button_no">No</string>
+    <string name="book_room_notification_title">Confirmation of Library Room Booking</string>
+    
+</resources>

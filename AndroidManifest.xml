@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.libapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        
+        <receiver android:name=".NetReceiver" >
+        <intent-filter>
+            <action android:name="android.net.wifi.STATE_CHANGE" />
+        </intent-filter>
+    	</receiver>
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.libapp.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustPan" >
+             <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.libapp.SearchActivity" />
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name="com.example.libapp.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Search Activity -->
+        <!-- this is the searchable activity; it performs searches -->
+        <activity android:name="com.example.libapp.SearchActivity" 
+           android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        
+        <activity
+            android:name="com.example.libapp.NewCollectionActivity"
+            android:label="@string/title_activity_new_collection" >
+        </activity>
+        <activity
+            android:name="com.example.libapp.OneBookActivity"
+            android:label="@string/title_activity_one_book" >
+        </activity>
+
+        <activity
+            android:name="com.example.libapp.Review"
+            android:label="@string/title_activity_review" >
+        </activity>
+        <activity
+            android:name="com.example.libapp.ReservedListActivity"
+            android:label="@string/title_activity_reserved_list" >
+        </activity>
+
+        <!-- Map Activities -->
+        <activity
+            android:name="com.example.libapp.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.example.libapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.libapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.libapp.SearchListActivity"
+            android:label="@string/title_activity_search_list" >
+        </activity>
+        <activity
+            android:name="com.example.libapp.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.libapp.BookListActivity"
+            android:label="@string/title_activity_book_list" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.example.libapp.BubbleRoomActivity"
+            android:label="@string/title_activity_bubble_room" >
+        </activity>
+        <activity
+            android:name="com.example.libapp.FloorListActivity"
+            android:label="@string/title_activity_floor_list" >
+        </activity>
+        <activity
+            android:name="com.example.libapp.StudyRoomActivity"
+            android:label="@string/title_activity_study_room" >
+        </activity>
+        <activity
+            android:name="com.example.libapp.BookRoomList"
+            android:label="@string/title_activity_book_room_list" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+    </application>
+
+</manifest>
